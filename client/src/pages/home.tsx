@@ -25,6 +25,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
+import { Label } from "@/components/ui/label";
 import { 
   Form, 
   FormControl, 
@@ -364,10 +365,10 @@ export default function Home() {
 
                       <div className="space-y-4 rounded-xl border p-5 bg-gradient-to-br from-primary/5 to-secondary/50">
                         <div className="flex items-center justify-between">
-                          <FormLabel className="text-base font-semibold flex items-center gap-2">
+                          <Label className="text-base font-semibold flex items-center gap-2">
                             Bio
                             <Badge variant="outline" className="text-[10px] h-5 bg-background/50">AI Powered</Badge>
-                          </FormLabel>
+                          </Label>
                           <Button 
                             type="button" 
                             variant="default" 
