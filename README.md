@@ -7,6 +7,7 @@ A modern full-stack developer profile application that allows users to manage th
 ## Live Demo
 
 👉 https://developer-profile-hub-1.onrender.com/
+
 ---
 
 ## GitHub Repository
