@@ -65,21 +65,6 @@ This makes the portfolio more interactive and scalable compared to traditional s
 
 ---
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/vaibhavnagdeo18/developer-profile-hub.git
-cd developer-profile-hub
-### 2. Install dependencies
-```bash
-npm install
-
-### 3. Run the project
-```bash
-npm run dev
-
-4. Open in browser
-http://localhost:5001
-
 Future Improvements
 	•	Backend database integration (MongoDB / PostgreSQL)
 	•	Authentication system
