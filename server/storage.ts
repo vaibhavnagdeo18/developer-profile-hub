@@ -35,7 +35,7 @@ export class MemStorage implements IStorage {
       location: "Hyderabad, India",
       email: "vaibhavnagdeo@gmail.com",
       website: "https://Vaibhav.dev",
-      profilePicture: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
+      profilePicture: "/profile.jpg",
       skills: ["React", "TypeScript", "Node.js", "GraphQL", "AWS", "Tailwind CSS", "PostgreSQL", "Next.js"],
       socials: {
         github: "https://github.com/vaibhavnagdeo18",
@@ -50,17 +50,17 @@ export class MemStorage implements IStorage {
     const initialProjects: Project[] = [
       {
         id: randomUUID(),
-        title: "Gym Management System",
-        description: "Full stack gym management app with member tracking, payments, and admin dashboard.",
-        image: "https://images.unsplash.com/photo-1571019613914-85f342c1d4b1",
-        tech: ["React", "Node.js", "Firebase"]
+        title: "AI Manim Visualizer",
+        description: "Developed an AI system to convert natural language prompts into mathematical animations, improving education and engagement by 40%. Integrated GPT API for code generation and narration synchronization. Optimized render time by 25% through multiprocessing.",
+        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb",
+        tech: ["Python", "Manim", "OpenAI API"]
       },
       {
         id: randomUUID(),
-        title: "Swiggy Clone",
-        description: "Food delivery app with real-time order tracking, authentication and payment integration.",
-        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-        tech: ["Kotlin", "Firebase", "REST API"]
+        title: "Gesture Builder AI",
+        description: "Designed AI-driven gesture-based 3D creation platform, improving user interactivity by 50%. Integrated Node.js backend with Three.js to dynamically process user commands and update 3D environments in real time. Enhanced backend with Python FastAPI for real-time rendering and scalable management.",
+        image: "https://images.unsplash.com/photo-1633419461186-7d40a38105ec",
+        tech: ["React", "Node.js", "Three.js", "OpenAI API", "Python", "FastAPI"]
       }
     ];
     initialProjects.forEach(p => this.projects.set(p.id, p));

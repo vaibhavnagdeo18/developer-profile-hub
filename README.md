@@ -1,22 +1,22 @@
-# Developer Profile Hub
+# 🚀 Developer Profile Hub
 
 A modern full-stack developer profile application that allows users to manage their personal information, skills, and projects dynamically with a clean and responsive UI.
 
 ---
 
-## Live Demo
+## 🌐 Live Demo
 
-👉 https://developer-profile-hub-1.onrender.com/
-
----
-
-## GitHub Repository
-
-👉 https://github.com/vaibhavnagdeo18/developer-profile-hub
+👉 [https://developer-profile-hub-1.onrender.com/](https://developer-profile-hub-1.onrender.com/)
 
 ---
 
-## Tech Stack
+## 💻 GitHub Repository
+
+👉 [https://github.com/vaibhavnagdeo18/developer-profile-hub](https://github.com/vaibhavnagdeo18/developer-profile-hub)
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 - React 19 (Vite)
@@ -34,7 +34,7 @@ A modern full-stack developer profile application that allows users to manage th
 
 ---
 
-## Features
+## ✨ Features
 
 - **Editable Developer Profile**: Manage your name, bio, skills, and social links in real-time.
 - **Dynamic Project Showcase**: Add, edit, and delete projects with a smooth, lag-free experience.
@@ -45,7 +45,7 @@ A modern full-stack developer profile application that allows users to manage th
 
 ---
 
-## Innovation Feature
+## 🚀 Innovation Feature
 
 The main innovation in this project is transforming a static portfolio into a **dynamic and interactive profile management system**.
 
@@ -58,26 +58,26 @@ The main innovation in this project is transforming a static portfolio into a **
 
 ## ⚙️ Setup Instructions
 
-### Clone the repository
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/vaibhavnagdeo18/developer-profile-hub.git
 cd developer-profile-hub
 ```
 
-### Install Dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Run Development Server
+### 3️⃣ Run Development Server
 
 ```bash
 npm run dev
 ```
 
-### Build for Production
+### 4️⃣ Build for Production
 
 ```bash
 npm run build
@@ -86,7 +86,7 @@ npm start
 
 ---
 
-## Deployment
+## ☁️ Deployment
 
 This project includes a `render.yaml` file for seamless deployment on **Render**.
 
@@ -96,6 +96,6 @@ This project includes a `render.yaml` file for seamless deployment on **Render**
 
 ---
 
-## License
+## 📝 License
 
 Distributed under the MIT License.
