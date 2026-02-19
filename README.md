@@ -69,10 +69,12 @@ This makes the portfolio more interactive and scalable compared to traditional s
 ```bash
 git clone https://github.com/vaibhavnagdeo18/developer-profile-hub.git
 cd developer-profile-hub
-2. Install dependencies
+### 2. Install dependencies
+```bash
 npm install
 
-3. Run the project
+### 3. Run the project
+```bash
 npm run dev
 
 4. Open in browser
