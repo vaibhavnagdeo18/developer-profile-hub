@@ -473,9 +473,55 @@ export default function Home() {
                         name="profilePicture"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel>Profile Picture URL</FormLabel>
+                            <FormLabel>Profile Picture</FormLabel>
                             <FormControl>
-                              <Input placeholder="https://..." {...field} className="bg-background/50" />
+                              <div className="flex flex-col gap-4">
+                                <div className="flex items-center gap-4">
+                                  <Avatar className="w-16 h-16 border-2 border-primary/20 shadow-sm">
+                                    <AvatarImage src={field.value} className="object-cover" />
+                                    <AvatarFallback className="text-xl">{form.getValues("name")?.charAt(0)}</AvatarFallback>
+                                  </Avatar>
+                                  <div className="flex-1 space-y-1">
+                                    <Input
+                                      type="file"
+                                      accept="image/*"
+                                      className="bg-background/50 cursor-pointer text-xs"
+                                      onChange={(e) => {
+                                        const file = e.target.files?.[0];
+                                        if (file) {
+                                          if (file.size > 2 * 1024 * 1024) {
+                                            toast({
+                                              title: "File too large",
+                                              description: "Please select an image smaller than 2MB.",
+                                              variant: "destructive"
+                                            });
+                                            return;
+                                          }
+                                          const reader = new FileReader();
+                                          reader.onloadend = () => {
+                                            field.onChange(reader.result as string);
+                                          };
+                                          reader.readAsDataURL(file);
+                                        }
+                                      }}
+                                    />
+                                    <p className="text-[10px] text-muted-foreground">
+                                      Max 2MB. Supports JPG, PNG, WebP.
+                                    </p>
+                                  </div>
+                                </div>
+                                {field.value && (
+                                  <Button
+                                    type="button"
+                                    variant="ghost"
+                                    size="sm"
+                                    className="text-xs h-7 w-fit text-destructive hover:text-destructive hover:bg-destructive/10"
+                                    onClick={() => field.onChange("")}
+                                  >
+                                    Remove Photo
+                                  </Button>
+                                )}
+                              </div>
                             </FormControl>
                             <FormMessage />
                           </FormItem>
