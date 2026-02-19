@@ -123,13 +123,6 @@ export default function Home() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-  const handleDownloadResume = () => {
-    toast({
-      title: "Downloading Resume",
-      description: "Starting download for Resume.pdf...",
-    });
-  };
-
   const form = useForm<z.infer<typeof profileSchema>>({
     resolver: zodResolver(profileSchema),
     defaultValues: {
@@ -548,12 +541,6 @@ export default function Home() {
                           <Twitter className="h-5 w-5" />
                         </a>
                       )}
-                    </div>
-                    
-                    <div className="mt-6">
-                      <Button className="w-full gap-2" variant="outline" onClick={handleDownloadResume}>
-                        <Download className="h-4 w-4" /> Download Resume
-                      </Button>
                     </div>
                   </CardContent>
                 </Card>
