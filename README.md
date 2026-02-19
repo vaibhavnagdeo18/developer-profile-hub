@@ -6,13 +6,12 @@ A modern full-stack developer profile application that allows users to manage th
 
 ## Live Demo
 
-👉 [https://profile-hub.onrender.com](https://profile-hub.onrender.com) *(Placeholder - update with your actual Render URL)*
-
+👉 https://developer-profile-hub-1.onrender.com/
 ---
 
 ## GitHub Repository
 
-👉 [https://github.com/vaibhavnagdeo18/developer-profile-hub](https://github.com/vaibhavnagdeo18/developer-profile-hub)
+👉 https://github.com/vaibhavnagdeo18/developer-profile-hub
 
 ---
 
